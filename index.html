@@ -3,85 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posttest1_Nufa</title>
+    <title>Pemesanan | Restorant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table border ="1">
-        <tr>
-            <th colspan="4">
-                <img src="img/logo-resto.jpeg" alt="Logo Resto"><br>
-                <p>
-                    <u>Bukti Pemesanan</u>
-                </p>
-            </th>
-        </tr>
-        <tr>
-            <td colspan="2">Nama Pelayan: <b>Ahmad Nur Fauzan</b></td>
-            <td colspan="2">
-                Tanggal Pemesanan:
-                <input type="date">
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2"> Nama Pemesan: <b>Abdullah Azam</b></td>
-            <td colspan="2"> Alamat: Jl. Merdeka No. 15, Kota Balikpapan</td>
-        </tr>
-        <tr>
-            <th>Nama Menu</th>
-            <th>Jumlah</th>
-            <th>Harga Satuan</th>
-            <th>Total Harga</th>
-        </tr>
-        <tr>
-            <td> 
-                <img src="img/nasi-goreng.jpeg"><br>Nasi Goreng Spesial
-            <td>
-                <input type="number" min="1" value="1"> Porsi 
-            </td>
-            <td>Rp 25.000</td>
-            <td>Rp 25.000</td>
-        </tr>
-        <tr>
-            <td>
-                <img src="img/es-teh-manis.jpeg"><br>Es Teh Manis
-            </td>
-            <td>
-                <input type="number" min="1" value="1"> Gelas 
-            </td>
-            <td>Rp 5.000</td>
-            <td>Rp 5.000</td>
-        </tr>
-        <tr>
-            <th colspan="3">Total Pesanan</th>
-            <td>Rp 30.000</td>
-        </tr>
-        <tr>
-            <th colspan="3">Pajak</th>
-            <td>Rp 2.000</td>
-        </tr>
-        <tr>
-            <th colspan="3">Total Tagihan</th>
-            <td>Rp 32.000</td>
-        </tr>
-        <tr>
-            <td colspan="4"> <b>Metode Pembayaran: </b><br>
-                <input type="radio" name="metode" value="BCA"> Bank BCA
-                <input type="radio" name="metode" value="BRI"> Bank BRI
-                <input type="radio" name="metode" value="OVO"> OVO
-                <input type="radio" name="metode" value="GoPay"> GoPay
-            </td>
-        </tr>
-        <tr>
-            <td colspan="4">
-                <ul>
-                    <li>Nama: Nur Fadhilah</li>
-                    <li>NIM: 2309106066</li>
-                    <li>Praktikum Web: 
-                        <a href = "https://classroom.google.com/c/NzEwMjM1MTUyNDc0/a/NzExMzI1ODM3MDUy/details">Posttest 1</a> 
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+    <nav class="navbar-section">
+        <img src="Logo.png" alt="" width="50" height="50"> 
+        <ul class="navbar-menu">
+            <li class="navbar-list">
+                BERANDA
+            </li>
+            <li class="navbar-list">
+                TENTANG KAMI
+            </li>
+            <li class="navbar-list">
+                MENU
+            </li>
+        </ul>
+        
+        <a href="" class="navbar-buttom">
+            PESAN
+        </a>
+    </nav>
+    <section class="hero-section">
+        <img src="makanan.jpg" alt="Pesan" class="hero-image">
+        <div class = "hero-box"> 
+            <a href="" class="box-close">
+                <img src="close.png"  alt=" " width="30" height="30">
+            </a>
+            <br><br>
+            <h1 class="hero-title">
+                Detail Pemesanan
+            </h1><br>
+            <div class="info1">
+                Informasi Pemesanan 
+                <p class= "garis"></p>
+                <div class="informasi">
+                    <div class="left"><b>Nur Fadhilah</b>
+                        <p>Tanggal Pemesanan</p>
+                        <p>Alamat</p>
+                    </div> 
+                    <div class="right"> 2309106066<br>
+                        <p>18 September 2024</p>
+                        <p>Jl. Merdeka No. 15, Kota Balikpapan</p>
+                    </div>
+                </div>
+            </div>
+            <div class = "info2">
+                Daftar Pesanan <br><br>
+                <div class="pesanan">
+                    <div class="pesanan-img">
+                        <img src="nasi-goreng.jpeg" alt=" " width="45" height="45">
+                    </div>
+                    <p class="kiri">Nasi Goreng Spesial <br><br>1x</p>
+                    <p class="kanan">Rp 25.000</p>
+                </div>
+                <div class="pesanan">
+                    <div class="pesanan-img">
+                        <img src="es-teh-manis.jpeg" alt=" " width="45" height="45">
+                    </div>
+                    <p class="kiri">Es Teh<br><br>1x</p>
+                    <p class="kanann">Rp 5.000</p>
+                </div>
+                <br>
+                <div class= "garis"></div>
+                <div class="total">
+                    <div class="pembayaran">
+                        <div class="left2">Total Harga:
+                            <p>Pajak:</p>
+                            <p><b>Total Pembayaran:</b></p>
+                            <p class="mp">Metode Pembayaran:</p>
+                        </div> 
+                        <div class="right2"> Rp 30.000
+                            <p>Rp 2.000</p>
+                            <p><b>Rp 32.000</b></p>
+                            <div class="mp">
+                                <img src="gopay.png" alt=" " width="62" height="16">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-</html>
