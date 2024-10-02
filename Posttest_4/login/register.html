@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration</h2>
+        <form id="registrationForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" required>
+
+            <label for="age">Age Range:</label>
+            <select id="age" required>
+                <option value="">Select Age Range</option>
+                <option value="10 years or below">10 years or below</option>
+                <option value="11-17 years">11-17 years</option>
+                <option value="18-25 years">18-25 years</option>
+                <option value="26-35 years">26-35 years</option>
+                <option value="35 years and above">35 years and above</option>
+            </select>
+
+            <button type="button" onclick="submitForm()">Register</button>
+        </form>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
